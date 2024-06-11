@@ -4,7 +4,7 @@
 
     <div class="z-10">
         <h1 class="text-6xl font-bold uppercase text-white">
-            Cadenza<span class="text-black">Gigs</span>
+            Sound<span class="text-black">Scape</span>
         </h1>
         <p class="text-2xl text-gray-200 font-bold my-4">
             Find or post Music gigs & events

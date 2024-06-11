@@ -29,7 +29,7 @@
             },
         };
     </script>
-    <title>Cadenza | Find Music Gigs & Events</title>
+    <title>SoundScape | Temukan pertunjukan musik</title>
 </head>
 
 <body class="mb-48">
@@ -44,8 +44,7 @@
                     </span>
                 </li>
                 <li>
-                    <a href="/listings/manage" class="hover:text-laravel"><i class="fa-solid fa-gear"></i> Manage
-                        Gigs</a>
+                    <a href="/listings/manage" class="hover:text-laravel"><i class="fa-solid fa-gear"></i> Kelola Event</a>
                 </li>
                 <li>
                     <form method="POST" class="inline" action="/logout">

@@ -21,32 +21,15 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         Listing::create([
-            'title' => 'Kaamulan Music Festival',
+            'title' => 'Avenged Sevenfold',
             'tags' => 'Music, Rock, OPM',
             'organizer' => 'Bukidnon Music Entertainment',
-            'location' => 'Malaybalay City, Capitol Grounds',
-            'email' => 'kaamulan@email.com',
+            'location' => 'Stadion Gelora Bungkarno, Indonesian',
+            'email' => 'avengedsevenfold@email.com',
             'contact_number' => '09924928176',
             'description' => 'Join us for a euphoric celebration of music and culture at the Kaamulan Music Festival! 
             Held in the heart of downtown, this electrifying event brings together world-class musicians, passionate fans, 
             and vibrant performers for an unforgettable weekend of rhythm and soul.'
         ]); 
-
-        Listing::create([
-            'title' => 'Fliptop Music Fextival',
-            'tags' => 'Music, Hiphop, Rap',
-            'organizer' => 'Fliptop Entertainment',
-            'location' => 'Pasay City, Music Theater',
-            'email' => 'fliptop@email.com',
-            'contact_number' => '09924928170',
-            'description' => 'Experience the rhythm, rhyme, and raw energy of the urban streets at our Fliptop Music Festival! 
-            Join us for a celebration of the culture, beats, and creativity that define the hip-hop movement. 
-            Immerse yourself in a world where music becomes poetry, and dance becomes an expression of life. 
-            With electrifying performances from renowned artists, thrilling dance battles, and vibrant graffiti art showcases, 
-            this festival is a homage to the roots and evolution of hip-hop. Get ready to feel the pulse of the city and groove 
-            to the sounds of the streets at our unforgettable Fliptop Music Festival!'
-        ]); 
-
-        Listing::factory(7)->create();
     }
 }

@@ -34,8 +34,8 @@
 
 <body class="mb-48">
     <nav class="flex justify-between items-center">
-        <a href="/"><img class="w-32" src="{{ asset('images/cadenza.png') }}" alt="Cadenza logo"
-                class="logo" /></a>
+        <a href="/"><img class="img-thumbnail;" style="padding: 30px;" src="{{ asset('images/SoundScape.png') }}" alt="SoundScape logo"
+            class="logo" /></a>
         <ul class="flex space-x-6 mr-6 text-lg">
             @auth
                 <li>
@@ -44,7 +44,7 @@
                     </span>
                 </li>
                 <li>
-                    <a href="/listings/manage" class="hover:text-laravel"><i class="fa-solid fa-gear"></i> Kelola Event</a>
+                    <a href="/listings/create" class="hover:text-laravel"><i class="fa-solid fa-plus"></i> Tambahkan Event</a>
                 </li>
                 <li>
                     <form method="POST" class="inline" action="/logout">
@@ -71,11 +71,11 @@
     </main>
 
     <footer
-        class="z-999 fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-90 md:justify-center">
+        {{-- class="z-999 fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-90 md:justify-center">
     
         <p class="ml-2">Copyright &copy; 2024, All Rights reserved</p>
 
-        <a href="/listings/create" class="absolute top-1/3 right-10 rounded-lg bg-black text-white py-2 px-5 border-2 border-black hover:border-white hover:no-underline">Post Gigs</a>
+        <a href="/listings/create" class="absolute top-1/3 right-10 rounded-lg bg-black text-white py-2 px-5 border-2 border-black hover:border-white hover:no-underline">Post Gigs</a> --}}
 
     </footer>
 

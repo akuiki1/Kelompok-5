@@ -29,7 +29,7 @@ class UserController extends Controller
 
         auth()->login($user);
 
-        return redirect('/')->with('message', 'User created and logged in!');
+        return redirect('/index')->with('message', 'User created and logged in!');
         
     }
 
@@ -55,7 +55,7 @@ class UserController extends Controller
         if(auth()->attempt($formFields)) {
             $request->session()->regenerate();
 
-            return redirect('/')->with('message', "You are now logged in!");
+            return redirect('/index')->with('message', "You are now logged in!");
         }
 
        return back()->withErrors([

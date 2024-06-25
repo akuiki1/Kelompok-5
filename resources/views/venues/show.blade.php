@@ -4,7 +4,7 @@
     <div class="px-4 md:px-0">
         <div class="mx-4 max-w-4xl mx-auto mt-24">
             <x-card class="!p-10">
-                <a href="/index" class="inline-block text-black ml-4 mb-4"><i class="fa-solid fa-arrow-left"></i> Back
+                <a href="/" class="inline-block text-black ml-4 mb-4"><i class="fa-solid fa-arrow-left"></i> Back
                 </a>
                 <div class="flex flex-col items-center justify-center text-center">
                     <img class="hidden w-48 md:block"
@@ -25,7 +25,7 @@
                         <h3 class="text-3xl font-bold mb-4">
                             Gig Description
                         </h3>
-                        <div class="text-lg space-y-6 pb-10">
+                        <div class="text-lg space-y-6">
                             <p>
                                 {{ $listing->description }}
                             </p>
@@ -41,16 +41,16 @@
                                 Facebook Page</a> --}}
                         </div>
                     </div>
-                    <div class="flex items-center justify-center">
+                    <div class="w-full">
                         <h3 class="text-3xl font-bold mb-4"> </h3>
-                        <img src="/storage/payment_proofs/AkN0HnieutNCWSSPWdgO9dK6WVDFxOwVZMe1HSCn.png" alt="Venue Photo" class="w-48 h-auto mb-4">
+                        <img src="/path/to/venue/photo.jpg" alt="Venue Photo" class="w-full h-auto mb-4">
                     </div>
                     <div class="w-full flex justify-between items-center mt-8">
                         <div class="flex flex-col items-start">
                             <h3 class="text-3xl font-bold mb-4">Harga Tiket</h3>
                             <p class="text-lg text-orange-500 mb-6">IDR 1600K - 2600K / Tiket</p>
                         </div>
-                        <a href="{{ route('buy-ticket', ['listing_id' => $listing->id]) }}" class="bg-orange-500 text-white py-2 px-4 rounded-xl hover:bg-orange-600">Beli Tiket</a>
+                        <a href="/buy-ticket" class="bg-orange-500 text-white py-2 px-4 rounded-xl hover:bg-orange-600">Beli Tiket</a>
                     </div>                    
                 </div>
             </x-card>

@@ -13,7 +13,7 @@
         @else
             <p>No listings Found</p>
         @endunless
-
+        
     </div>
 
     <div class="mt-4 pl-4 pr-4">

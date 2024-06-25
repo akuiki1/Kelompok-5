@@ -44,6 +44,14 @@
                 </div>
 
                 <div class="mb-6">
+                    <label for="date" class="inline-block text-lg mb-2">Tanggal Event</label>
+                    <input type="date" class="border border-gray-200 rounded p-2 w-full" name="date" value="{{ $listing->date }}" />
+                    @error('date')
+                        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                    @enderror
+                </div>
+
+                <div class="mb-6">
                     <label for="email" class="inline-block text-lg mb-2">Contact Email</label>
                     <input type="text" class="border border-gray-200 rounded p-2 w-full" name="email"
                         placeholder="sample@email.com" value="{{ $listing->email }}" />
@@ -106,7 +114,7 @@
 
                 <div class="mb-6 flex justify-end items-center">
 
-                    <a href="/" class="text-black mr-4"> Back </a>
+                    <a href="/index" class="text-black mr-4"> Back </a>
 
                     <button class="bg-laravel text-white rounded py-2 px-4 hover:bg-black">
                         Update
